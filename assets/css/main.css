@@ -3201,6 +3201,17 @@ h6 {
   display: -ms-flexbox;
   display: flex;
 }
+.logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box .mobile-nav__toggler {
+  margin-left: auto;   /* Push to right */
+  font-size: 28px;     /* Make it visible */
+  cursor: pointer;
+}
 
 .mobile-nav__close {
   position: absolute;
