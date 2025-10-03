@@ -3201,6 +3201,19 @@ h6 {
   display: -ms-flexbox;
   display: flex;
 }
+
+.logo-box {
+  display: flex;
+  justify-content: space-between; /* push logo left, menu right */
+  align-items: center;
+  width: 100%;
+}
+
+.logo-box .mobile-nav__toggler {
+  font-size: 26px;
+  cursor: pointer;
+}
+
 .logo-box {
   display: flex;
   justify-content: space-between;
@@ -8669,4 +8682,31 @@ i{
 
 .fa-whatsapp{
   color: #ffffff;
+}
+
+/* Fixes for mobile issues */
+
+/* Stop horizontal scroll on mobile */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix hamburger alignment */
+.logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-box .mobile-nav__toggler {
+  margin-left: auto;
+  font-size: 26px;
+  cursor: pointer;
 }
